@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Web Service - Jasa Web Profesional</title>
+  <meta name="description" content="Jasa pembuatan web, hosting, maintenance — cepat, aman, dan ramah anggaran. Kontak untuk konsultasi gratis." />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#7dd3fc;--muted:#94a3b8}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;color:#e6eef8;background:linear-gradient(180deg,var(--bg) 0%, #071023 100%);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px}
+    .wrap{width:100%;max-width:980px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.015));border-radius:14px;padding:28px;box-shadow:0 8px 30px rgba(2,6,23,0.6);display:grid;grid-template-columns:1fr 420px;gap:24px}
+    header{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between}
+    h1{font-size:20px;margin:0;color:white}
+    p.lead{margin:6px 0 0;color:var(--muted);font-size:13px}
+    .card{background:var(--card);padding:18px;border-radius:12px}
+    .left .promo{color:#eaf8ff}
+    .promo h2{margin:0 0 8px;font-size:28px}
+    .promo p{margin:0 0 14px;color:var(--muted);line-height:1.4}
+    .features{display:flex;flex-wrap:wrap;gap:10px}
+    .feat{background:rgba(255,255,255,0.02);padding:10px 12px;border-radius:10px;font-size:13px;color:var(--muted)}
+    .cta{display:flex;gap:10px;margin-top:16px}
+    .btn{padding:10px 14px;border-radius:10px;border:0;cursor:pointer;font-weight:600}
+    .btn.primary{background:linear-gradient(90deg,var(--accent),#60a5fa);color:#04233b}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+    .right{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px}
+    .cat-card{width:360px;height:360px;display:grid;place-items:center}
+    /* SVG animation container */
+    .cat-wrap{width:320px;height:320px}
+    .meta{font-size:12px;color:var(--muted);text-align:center}
+    footer{grid-column:1/-1;margin-top:6px;color:var(--muted);font-size:12px;text-align:center}
+    /* Responsive */
+    @media (max-width:880px){.wrap{grid-template-columns:1fr;}.right{order:-1}.cat-card{margin:0 auto}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div>
+        <h1>Jasa Web Service</h1>
+        <p class="lead">Solusi web cepat, aman, dan tanpa repot, cocok untuk bisnis kecil hingga skala menengah.</p>
+      </div>
+      <div style="text-align:right;color:var(--muted);font-size:12px">.</div>
+    </header>
+
+    <section class="left card">
+      <div class="promo">
+        <h2>Buat Hadir Online yang Berkesan</h2>
+        <p>Kami menyediakan pembuatan website statis dinamis, optimasi performa, deployment GitHub Pages, dan dukungan maintenance. Dapatkan website responsif, SEO-friendly, dan aman — mulai dari desain hingga live dalam 48 jam.</p>
+      </div>
+
+      <div style="margin-top:16px" class="features">
+        <div class="feat">✅ Desain responsif</div>
+        <div class="feat">✅ Deployment GitHub Pages</div>
+        <div class="feat">✅ SSL & performa</div>
+        <div class="feat">✅ Harga Mahal</div>
+        <div class="feat">✅ Maintenance & backup</div>
+      </div>
+
+      <div class="cta">
+        <button class="btn primary" onclick="contact()">Hubungi Sekarang</button>
+      </div>
+
+      <div style="margin-top:18px;color:var(--muted);font-size:13px">Contoh layanan: landing page produk, portfolio profesional, microsite kampanye, dokumentasi produk.</div>
+    </section>
+
+    <aside class="right card">
+      <div class="cat-card">
+        <!-- Original SVG animated cat (dibuat untuk proyek ini — bebas hak cipta) -->
+        <div class="cat-wrap" aria-hidden="true">
+          <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" role="img">
+            <defs>
+              <linearGradient id="g1" x1="0" x2="1">
+                <stop offset="0" stop-color="#7dd3fc" />
+                <stop offset="1" stop-color="#60a5fa" />
+              </linearGradient>
+            </defs>
+            <rect width="240" height="240" rx="20" fill="url(#g1)" opacity="0.08" />
+
+            <!-- body -->
+            <g transform="translate(20,40)">
+              <ellipse cx="100" cy="90" rx="70" ry="48" fill="#ffe7a7" stroke="#f9d08a" stroke-width="2" />
+              <!-- tail -->
+              <path id="tail" d="M165 100 c30 -10 30 -40 6 -58" fill="none" stroke="#f6c86b" stroke-width="12" stroke-linecap="round" />
+              <!-- head -->
+              <g id="head" transform="translate(40,0)">
+                <circle cx="60" cy="40" r="34" fill="#ffd88f" stroke="#f0bf66" stroke-width="2" />
+                <ellipse cx="46" cy="36" rx="6" ry="8" fill="#1b2330" />
+                <ellipse cx="74" cy="36" rx="6" ry="8" fill="#1b2330" />
+                <path d="M52 52 q8 8 16 0" stroke="#8b5e34" stroke-width="2" fill="none" stroke-linecap="round" />
+                <!-- ear -->
+                <path d="M36 20 l-12 -16 l6 22 z" fill="#ffd88f" stroke="#f0bf66" />
+                <path d="M86 20 l12 -16 l-6 22 z" fill="#ffd88f" stroke="#f0bf66" />
+              </g>
+
+              <!-- eyes blink animation via small rectangles scaled -->
+              <g id="eyes" transform="translate(88,28)">
+                <rect x="-22" y="8" width="12" height="6" rx="3" fill="#1b2330" />
+                <rect x="10" y="8" width="12" height="6" rx="3" fill="#1b2330" />
+              </g>
+
+              <!-- whiskers -->
+              <g transform="translate(100,54)" stroke="#8b5e34" stroke-width="1.5">
+                <path d="M-36 -2 q-18 -2 -36 -6" fill="none" stroke-linecap="round" />
+                <path d="M-36 2 q-18 2 -36 6" fill="none" stroke-linecap="round" />
+                <path d="M36 -2 q18 -2 36 -6" fill="none" stroke-linecap="round" />
+                <path d="M36 2 q18 2 36 6" fill="none" stroke-linecap="round" />
+              </g>
+
+              <!-- cute blush -->
+              <ellipse cx="72" cy="64" rx="8" ry="4" fill="#ffb4b4" opacity="0.7" />
+              <ellipse cx="48" cy="64" rx="8" ry="4" fill="#ffb4b4" opacity="0.7" />
+
+              <!-- floating sparkles -->
+              <g id="sparks" fill="#fff" opacity="0.9">
+                <circle cx="20" cy="20" r="2" />
+                <circle cx="200" cy="40" r="1.5" />
+                <circle cx="170" cy="10" r="2" />
+              </g>
+            </g>
+
+            <!-- Animations using SMIL (widely supported in modern browsers) -->
+            <style>
+              /* Tail wag */
+              @keyframes wag { 0%{transform:translateX(0) rotate(0deg)} 50%{transform:translateX(0) rotate(12deg)} 100%{transform:translateX(0) rotate(0deg)} }
+              /* Head bob */
+              @keyframes bob { 0%{transform:translateY(0)} 50%{transform:translateY(-4px)} 100%{transform:translateY(0)} }
+              /* Sparks float */
+              @keyframes floaty { 0%{transform:translateY(0)} 50%{transform:translateY(-8px)} 100%{transform:translateY(0)} }
+            </style>
+
+            <!-- apply animations to elements via CSS animation on foreignObject wrapper trick -->
+            <foreignObject x="0" y="0" width="240" height="240">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="width:240px;height:240px;pointer-events:none">
+                <div style="width:240px;height:240px;transform-origin:170px 140px;animation:wag 1.2s ease-in-out infinite;position:relative;top:0px"></div>
+                <div style="width:240px;height:240px;transform-origin:76px 40px;animation:bob 3s ease-in-out infinite;position:relative;top:0px"></div>
+                <div style="width:240px;height:240px;animation:floaty 2.6s ease-in-out infinite;position:relative;top:0px"></div>
+              </div>
+            </foreignObject>
+
+          </svg>
+        </div>
+      </div>
+
+      <div class="meta">.</div>
+    </aside>
+
+    <footer>
+      <div>.</div>
+    </footer>
+  </main>
+
+  <script>
+    function contact(){
+      const email = 'hello@example.com';
+      const subject = encodeURIComponent('Permintaan Jasa Web');
+      const body = encodeURIComponent('Halo, saya tertarik dengan jasa web service Anda. Mohon info paket dan estimasi harga.');
+      window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+    }
+    function download(){
+      // Generate a single-file download of the current page (index.html)
+      const blob = new Blob([document.documentElement.outerHTML], {type: 'text/html'});
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'index.html';
+      a.click();
+      URL.revokeObjectURL(a.href);
+    }
+  </script>
+</body>
+</html>
